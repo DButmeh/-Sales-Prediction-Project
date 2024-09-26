@@ -71,3 +71,43 @@ This resutled in a different pattern of Item Outlet Sales for these two supermar
 ![image](https://github.com/user-attachments/assets/e247af4f-8833-4bb2-a05a-8417cc0cd63c)
  - Through exploring slopes, most Supermarket type 3's Item types are located in the 2nd and 3rd Item MRP ranges.
  - Distribution of Item types around the Supermarket type1 trend line seems like the average of the all the item outlet sales.
+# Maching Learning Using the Following Models:
+- Linear Regression Model
+- Random Forest Regressor Model
+- Tuned Random Forest Regressor Model
+# Models Evaluated & Results
+##Linear Regression Model 
+- Regression Metrics: Test Data
+ - MAE = 804.089
+ - MSE = 1,194,326.602
+ - RMSE = 1,092.853
+ - R^2 = 0.567
+## Default Random Forest Model
+- Regression Metrics: Test Data
+ - MAE = 765.671
+ - MSE = 1,213,934.180
+ - RMSE = 1,101.787
+ - R^2 = 0.560
+## Tuned Random Forest Model
+- Regression Metrics: Test Data
+ - MAE = 738.982
+ - MSE = 1,130,203.386
+ - RMSE = 1,063.110
+ - R^2 = 0.590
+# Item Outlet Sales Describe(target describe)
+- count= 8523.00
+- mean = 2181.29
+- std = 1706.50
+- min = 33.29
+- 25% = 834.25
+- 50% = 1794.33
+- 75% = 3101.30
+- max = 13086.96
+For the testing set on the model, 59% of the variance in y was explained by x.
+The Mean Absolute Error was off by about 739 items.
+The Mean Squared Error was 1,130,203.
+The Root Mean Squared Error had a calculation of 1,063 items.  
+- Tuned Random Forest Model Observations is better than Random Forest and Linear Regression Model for test data.
+- Item outlet sales Error of MAE=739 is still almost near to the 25% of the item outlet sales count which is a high score especially that min item score 33 items only.
+# Using This Model to make predictions for item outlet sales which item outlets to choose to earn the highest outlet sales would not be a very reliable. Considering the previous regression metrics from how the model performed, there is a disparity in one of the model while out of performance for others. Considering the previous regression metrics from how the model performed.
+ 
